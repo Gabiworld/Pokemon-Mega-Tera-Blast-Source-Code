@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/hw_activity_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center" android:background="@color/hw_header_bg" android:layout_width="match_parent" android:layout_height="@dimen/hw_header_height">
+        <TextView android:textSize="@dimen/hw_header_textSize" android:textColor="@color/hw_header_textColor" android:gravity="center" android:id="@+id/tv_title" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include layout="@layout/qg_view_back_btn"/>
+    </FrameLayout>
+    <WebView android:id="@+id/web_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

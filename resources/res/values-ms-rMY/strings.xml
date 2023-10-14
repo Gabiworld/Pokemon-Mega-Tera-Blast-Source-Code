@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qg_agree_service_and_policy">Sila pastikan anda telah membaca Perjanjian Perkhidmatan dan Dasar Privasi kami dengan teliti, dan tekan Setuju untuk meneruskan permainan.</string>
+    <string name="qg_agreement_cancel">Keluar</string>
+    <string name="qg_agreement_confirm">Setuju</string>
+    <string name="qg_agreement_policy">Dasar Privasi</string>
+    <string name="qg_agreement_service">Perjanjian Perkhidmatan</string>
+</resources>

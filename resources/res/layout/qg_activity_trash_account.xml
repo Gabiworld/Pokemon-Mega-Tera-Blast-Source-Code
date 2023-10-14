@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/qg_activity_bg_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/hw_dialog_bg" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="20sp" android:textColor="@color/hw_white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/hw_account_recover_title" android:singleLine="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/hw_white" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="20dp" android:layout_marginRight="15dp" android:text="@string/hw_account_trash_content"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="20dp">
+            <Button android:textColor="#ffffff" android:id="@+id/hw_btn_destroy_account_yes" android:background="@drawable/hw_button_coloured_bg_selector" android:layout_width="120dp" android:layout_height="38dp" android:text="@string/hw_account_trash_button_ok"/>
+            <View android:layout_width="20dp" android:layout_height="0dp"/>
+            <Button android:textColor="#ffffff" android:id="@+id/hw_btn_destroy_account_mo" android:background="@drawable/hw_button_coloured_bg_selector" android:layout_width="120dp" android:layout_height="38dp" android:text="@string/hw_account_trash_button_cancel"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

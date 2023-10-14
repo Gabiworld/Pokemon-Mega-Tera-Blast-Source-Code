@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="kr_login_back">#b3000000</drawable>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <drawable name="qg_account_choise_bg_sel">#40000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+</resources>

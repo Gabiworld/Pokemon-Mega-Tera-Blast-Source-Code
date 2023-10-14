@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="5" android:versionName="1.0.4" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.mithrilgame.terablast.ard" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="31"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <queries>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.android.vending"/>
+        <package android:name="com.google.android.gms"/>
+    </queries>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/icon" android:name="com.easygametime.ezbkm.GameApp" android:allowBackup="true" android:supportsRtl="true" android:fullBackupContent="@xml/appsflyer_backup_rules" android:networkSecurityConfig="@xml/network_security_config" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.easygametime.ezbkm.activity.GameShellActivity" android:exported="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="android.max_aspect" android:value="2.34"/>
+        <activity android:theme="@style/com_facebook_activity_theme" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="fbconnect" android:host="cct.com.mithrilgame.terablast.ard"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="DEV_KEY" android:value="uWTgBh9w4ewVzRhWF3dqEg"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.Pay129Activity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.HWPayWayActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Light.NoTitleBar.Fullscreen" android:name="com.quickgame.android.sdk.activity.HWPayActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.CheckThirdLoginBindActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.CheckActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.FreeLoginActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.HWLoginActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.GuestTipsAfterPayActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.CompatOldVersionActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name="com.quickgame.android.sdk.activity.HWWebViewActivity" android:screenOrientation="behind"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.NewGooglePlayActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.HWAccountCenterActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.HWModifyPwActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.NoticeActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.BindEmailActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.BindThirdLoginActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.TrashAccountActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.AccountRecoverActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.GoogleLoginActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/QGTransparent" android:name="com.quickgame.android.sdk.activity.FacebookLoginActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.mithrilgame.terablast.ard.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:name="com.p010qg.easyfloat.QGFloatInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.mithrilgame.terablast.ard.QGFloatInitializer"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="4.1.0"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.android.billingclient.api.ProxyBillingActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <provider android:name="com.facebook.internal.FacebookInitProvider" android:exported="false" android:authorities="com.mithrilgame.terablast.ard.FacebookInitProvider"/>
+        <receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:value="@xml/splits0"/>
+    </application>
+</manifest>

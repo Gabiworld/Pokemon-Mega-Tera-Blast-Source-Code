@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/toast_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="15dp" android:textColor="@color/hw_dialog_title_textColor" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tv_content" android:background="@drawable/sdk_toast_bg_shape" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

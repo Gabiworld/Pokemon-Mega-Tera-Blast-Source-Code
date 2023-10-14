@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/qg_float_menu_bg_shape" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="@dimen/qg_float_view_width" android:paddingEnd="20dp">
+    <ImageView android:id="@+id/icon" android:layout_width="@dimen/qg_float_view_width" android:layout_height="@dimen/qg_float_view_width" android:src="@drawable/qg_float_main_icon"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/icon" android:layout_toEndOf="@+id/icon">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_menu1" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="@dimen/qg_float_view_menu_width">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/qg_float_view_menu_img_width" android:layout_height="@dimen/qg_float_view_menu_img_width" android:src="@drawable/qg_float_menu_user_center_green"/>
+            <TextView android:textSize="@dimen/qg_float_view_menu_text_size" android:textColor="@color/hw_float_content_textColor" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/qg_float_view_menu_margin_top" android:text="@string/hw_floating_user"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_menu2" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="@dimen/qg_float_view_menu_width">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/qg_float_view_menu_img_width" android:layout_height="@dimen/qg_float_view_menu_img_width" android:src="@drawable/qg_float_menu_facebook_community_green"/>
+            <TextView android:textSize="@dimen/qg_float_view_menu_text_size" android:textColor="@color/hw_float_content_textColor" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/qg_float_view_menu_margin_top" android:text="@string/hw_floating_fbCommunity"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_menu3" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="@dimen/qg_float_view_menu_width">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/qg_float_view_menu_img_width" android:layout_height="@dimen/qg_float_view_menu_img_width" android:src="@drawable/qg_float_menu_customer_service"/>
+            <TextView android:textSize="@dimen/qg_float_view_menu_text_size" android:textColor="@color/hw_float_content_textColor" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/qg_float_view_menu_margin_top" android:text="@string/hw_floating_customerService"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_menu4" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="@dimen/qg_float_view_menu_width">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/qg_float_view_menu_img_width" android:layout_height="@dimen/qg_float_view_menu_img_width" android:src="@drawable/qg_float_menu_logout"/>
+            <TextView android:textSize="@dimen/qg_float_view_menu_text_size" android:textColor="@color/hw_float_content_textColor" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/qg_float_view_menu_margin_top" android:text="@string/hw_floating_logout"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

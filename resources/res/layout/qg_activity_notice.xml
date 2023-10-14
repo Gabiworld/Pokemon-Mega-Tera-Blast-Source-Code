@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@color/qg_activity_bg_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:visibility="invisible" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/qg_notice_bg_shape" android:layout_width="0dp" android:layout_height="@dimen/sdk_notice_height_p" android:layout_weight="8">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/sdk_notice_header_height">
+            <TextView android:textSize="@dimen/hw_dialog_title_textSize" android:textColor="@color/sdk_button_coloured_bg_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hw_notice" android:layout_centerInParent="true"/>
+            <FrameLayout android:layout_gravity="end" android:id="@+id/flBlack" android:focusable="true" android:clickable="true" android:layout_width="@dimen/sdk_notice_header_height" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hw_close" android:tint="@color/sdk_button_coloured_bg_normal"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <View android:background="#333333" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <WebView android:id="@+id/noticeWebview" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioGroup android:orientation="horizontal" android:id="@+id/ll_type" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <View android:visibility="invisible" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>
